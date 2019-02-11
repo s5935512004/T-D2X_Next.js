@@ -50,7 +50,7 @@ const Header = () => (
             cursor: pointer;
           }
     `}</style>
-    <div class="topbar" align="right" style={topbar}>
+    {<div class="topbar" align="right" style={topbar}>
       <Grid container spacing={8} >
         <Grid item xs={10} sm={10} align="center">Logo</Grid>
         <Grid item xs={2} sm={2} align="right" >
@@ -59,7 +59,7 @@ const Header = () => (
           </Link>
         </Grid>
       </Grid>
-    </div>
+    </div>}
     <Grid container>
       <Grid item xs={12} sm={10} md={10} lg={10} >
         <Tabs style={{ backgroundColor: '#33479e', paddingTop: '50px'}}>

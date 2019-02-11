@@ -70,7 +70,7 @@ class QandA extends Component {
         }
     }
     get = () => {
-        axios.get('https://calm-plains-71371.herokuapp.com/api').then(res => {
+        axios.get('http://localhost:5000/api').then(res => {
             console.log(res.data)
             this.setState({
                 T: res.data.type
@@ -78,7 +78,7 @@ class QandA extends Component {
         })
     }
     post2 = (evt) => {
-        axios.post('https://calm-plains-71371.herokuapp.com/api', {
+        axios.post('http://localhost:5000/api', {
             symptom: evt
         }).then((res) => {
             //console.log("res :"+res)
