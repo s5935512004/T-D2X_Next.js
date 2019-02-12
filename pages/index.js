@@ -10,9 +10,12 @@ import Button from '@material-ui/core/Button'
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 
 const Index = () => (
-   <Layout>
-     <Home/>
-   </Layout>
+    
+  <div >
+    <Layout>
+    <Home/>
+    </Layout>
+  </div>
 )
 
 export default Index

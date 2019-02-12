@@ -8,20 +8,220 @@ import Avatar from '@material-ui/core/Avatar'
 import axios from 'axios'
 import { Button } from '@material-ui/core'
 import Chip from '@material-ui/core/Chip'
+import Card from '@material-ui/core/Card'
+import CircularProgress from '@material-ui/core/CircularProgress';
+
+class App extends Component {
+    constructor() {
+        super()
+        this.state = {
+            ans: "",
+            text: "",
+            data: {
+
+            },
+            isLoading: true,
+            main: true
+        }
+
+    }
+    componentDidMount = () => {
+        this.setState({ main: true })
+    }
+
+    get = () => {
+        axios.get('http://localhost:3001/q').then(res => {
+            console.log(res.data.title)
+            this.setState({ data: res.data }, () => console.log(this.state.data))
+        })
+            .finally(() => {
+                this.setState({ isLoading: false, main: false })
+            })
+    }
+    reset = () => {
+        this.setState({ main: true })
+    }
+    send1 = (evt) => {
+        this.setState({ isLoading: true })
+        evt.preventDefault()
+        if (this.state.data.order.substring(0, 1) === 'S') {
+            axios.post('http://157.230.43.83:3001/q', {
+                order: this.state.data.symptom.S1.nextOrder
+            }).then((res) => {
+                console.log(res)
+                this.setState({ data: res.data }, () => console.log(this.state.data))
+            }).catch(error => {
+                console.log(error.message);
+            }).finally(() => {
+                this.setState({ isLoading: false, main: false })
+            })
+        } else {
+            axios.post('http://157.230.43.83:3001/q', {
+                order: this.state.data.symptom.U1.nextOrder
+            }).then((res) => {
+                console.log(res)
+                this.setState({ data: res.data }, () => console.log(this.state.data))
+            }).catch(error => {
+                console.log(error.message);
+            }).finally(() => {
+                this.setState({ isLoading: false, main: false })
+            })
+        }
+
+    }
+    send2 = (evt) => {
+        this.setState({ isLoading: true })
+        evt.preventDefault()
+        axios.post('http://157.230.43.83:3001/q', {
+            order: this.state.data.symptom.U2.nextOrder
+        }).then((res) => {
+            console.log(res)
+            this.setState({ data: res.data }, () => console.log(this.state.data))
+        }).catch(error => {
+            console.log(error.message);
+        }).finally(() => {
+            this.setState({ isLoading: false, main: false })
+        })
+    }
+
+    render() {
+        const QandAE = () => (
+            < div >
+                <Paper>
+                    <Grid container spacing={12} style={boxstyle}>
+                        <Grid item xs={2} sm={2} align='center'>
+                            <Avatar style={tstyles} >T</Avatar>
+                        </Grid>
+                        <Grid item xs={8} sm={8}>
+                            <Paper style={mtstyle}>{this.state.data.title}</Paper>
+                        </Grid>
+                        <Grid item xs={2} sm={2}></Grid>
+                    </Grid>
+                    <Grid container spacing={12} >
+                        <Grid item xs={2} sm={2}></Grid>
+                        <Grid item xs={8} sm={8} style={boxMessage}>
+                            <Paper style={mastyle} onClick={this.send1} >{this.state.data.symptom.U1.title}</Paper>
+                            <Paper style={mastyle} onClick={this.send2} >{this.state.data.symptom.U2.title}</Paper>
+                        </Grid>
+                        <Grid item xs={2} sm={2} align='center'>
+                            <Avatar style={ustyles}>U</Avatar>
+                        </Grid>
+                    </Grid>
+                </Paper>
+            </div >
+        )
+        const Recommend = () => (
+            <div>
+                <Grid container spacing={24}>
+                    <Grid item xs={12} sm={2} md={2} lg={2}></Grid>
+                    <Grid item xs={12} sm={8} md={8} lg={8}>
+                        <Card style={cardstyle}>
+                            <h2 align='center'>{this.state.data.title}</h2>
+                            <p onClick={this.send1}>{this.state.data.symptom.S1.title}</p>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={2} md={2} lg={2} ></Grid>
+                </Grid>
+            </div>
+        )
+        const cardstyle = {
+            marginTop: '30px',
+           
+            paddingLeft: '10px',
+            paddingRight: '10px',
+        }
+        const Develop =()=> (
+            <div>
+                <Grid container spacing={24}>
+                    <Grid item xs={12} sm={2} md={2} lg={2}></Grid>
+                    <Grid item xs={12} sm={8} md={8} lg={8}>
+                        <Card style={cardstyle}>
+                            <h2 align='center'>{this.state.data.title}</h2>
+                            <p onClick={this.reset}>Coming Soon</p>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={2} md={2} lg={2} ></Grid>
+                </Grid>
+            </div>
+        )
+        const Progress = () =>(
+                <div style={cardstyle}>
+                    <CircularProgress color="primary"></CircularProgress>
+                </div>
+        )
+
+        const { isLoading, data, main } = this.state
+
+        return (
+            <center>
+                {isLoading === true && main === false && (
+                    <tr>
+                        <td colSpan="5">
+                            <center>
+                            {Progress()}
+                            </center>
+                        </td>
+                    </tr>
+                )}
+                {main === true && (
+                    this.get()
+
+                )}
+                {isLoading === false && main === false && data.title === 'กำลังพัฒนา' && (
+                    <center>
+                        {/* <h1>{this.state.data.title}</h1>
+                        <button onClick={this.reset}>HOME</button> */}
+                        {Develop()}
+                    </center>
+                )}
+                {isLoading === false && main === false && data.type === 'summit' && (
+                    <center>
+                        {/* <h1>{this.state.data.title}</h1>
+                        <button onClick={this.send1}>{this.state.data.symptom.S1.title}</button>
+                        <p>order : {this.state.data.order}</p>
+                        <button onClick={this.reset}>HOME</button> */}
+                        {Recommend()}
+                    </center>
+                )}
+                {/* {isLoading === false && main === false   && data.type ==='developing'  &&(
+                              <center>
+                <h1>{this.state.data.title}</h1>
+                <button onClick={this.reset}>HOME</button>
+              </center>
+                          )} */}
+                {isLoading === false && data.symptom.count === 2 && main === false && (
+                    <center>
+                        {/* <h1>{this.state.data.title}</h1>
+                        <button onClick={this.send1}>{this.state.data.symptom.U1.title}</button>
+                        <button onClick={this.send2}>{this.state.data.symptom.U2.title}</button>
+                        <p>order : {this.state.data.order}</p>
+                        <button onClick={this.reset}>HOME</button> */}
+                        {QandAE()}
+                    </center>
+                )}
+
+            </center>
+
+        );
+    }
+}
+
+export default App;
 
 const boxstyle = {
     margin: '30px 0px',
 }
 
 const tstyles = {
-    marginLeft: '15px',
-    marginTop: '30px',
-    marginBottom: '40px',
+    align: 'center',
+    //marginLeft: '15px',
+    marginTop: '28px',
+    //marginBottom: '40px',
 }
 const ustyles = {
-    marginRight: '15px',
-    float: 'Right',
-    marginBottom: '15px',
+    //marginRight: '15px',
+    //float: 'Right',
+    //marginBottom: '15px',
 }
 
 const qastyles = {
@@ -47,230 +247,3 @@ const mastyle = {
 const boxMessage = {
     marginBottom: '30px',
 }
-
-class QandA extends Component {
-    constructor() {
-        super()
-        this.state = {
-            T: "สวัสดี คุณต้องการให้ช่วยไหมครับ",
-            U1: "ต้องการความช่วยเหลือ",
-            U2: "ต้องการหาโรงพยาบาลใกล้เคียง",
-            code: 'T0U1',
-            data: {},
-            count: 1,
-            tstate: 1,
-            stathis: 1,
-        }
-        this.objHis = {
-            a1: 'ต้องการความช่วยเหลือ',
-            a2: '',
-            a3: '',
-            a4: '',
-            a5: '',
-        }
-    }
-    get = () => {
-        axios.get('http://localhost:5000/api').then(res => {
-            console.log(res.data)
-            this.setState({
-                T: res.data.type
-            })
-        })
-    }
-    post2 = (evt) => {
-        axios.post('http://localhost:5000/api', {
-            symptom: evt
-        }).then((res) => {
-            //console.log("res :"+res)
-            this.setState({ data: res.data }, () => console.log(this.state.data))
-            this.setState({ T: this.state.data.T })
-            this.setState({ U1: this.state.data.U1 })
-            this.setState({ U2: this.state.data.U2 })
-        })
-    }
-
-    callByU1 = () => {
-        if (this.state.count == 1 && this.state.tstate == 1) {
-            this.state.count++ //count = 2
-            this.state.tstate++
-            this.get()
-            this.setState({ U1: 'ใช่', U2: 'ไม่ใช่' })
-        }
-        else if (this.state.count == 2 && this.state.tstate == 2) { //ใช่ T0U1
-            this.state.count++ //count = 3
-            this.state.tstate++
-            this.state.stathis++
-            this.objHis.a2='มีอุจาระร่วงมากว่า 14 วัน'
-            this.post2('T0U1')
-            //this.setState({T: 'คุณมีอาการอย่างไรเด่น'})
-            //this.setState({U1:'อาเจียน',U2:'อุจจาระร่วง'})
-        }
-        else if (this.state.count == 3 && this.state.tstate == 3) { //อาเจียน T1U1
-            this.state.count++ //count = 4
-            this.state.stathis++
-            this.post2('T1U1')
-            this.objHis.a3='อาเจียน'
-            /*this.setState({T: 'เกิดจากอาหารเป็นพิษ หรือกระเพาะและลำไส้อักเสบจากไวรัส'})
-            setTimeout(() => {
-                this.setState({T: 'ต้องรักษาตามอาการ ป้องกันและรักษาภาวะขาดน้ำและเกลือแร่ด้วย ORT/ORS/IVF'})
-                }, 2000)
-            this.setState({U1:'กลับไปหน้าหลัก',U2:'สักซื้อเกลือแร่'})*/
-        }
-        else if (this.state.count == 4 && this.state.tstate == 4) { //ถ่ายเป็นน้ำ T2U1
-            this.state.count++ //count = 5
-            this.state.tstate++
-            this.state.stathis++
-            this.objHis.a4='ถ่ายเป็นน้ำ'
-            this.post2('T2U1')
-            //this.setState({T: 'คุณมีอาการรุนแรงไหม'})
-            //this.setState({U1:'ปานกลางถึงรุ่นแรง',U2:'มีน้อยหรือไม่มีเลย'})
-        }
-        else if (this.state.count == 5 && this.state.tstate == 5) { //ปานกลางถึงรุ่นแรง T3U1
-            this.state.count++ //count = 6
-            this.state.tstate++
-            this.state.stathis++
-            this.objHis.a5='ปานกลางถึงรุ่นแรง'
-            this.post2('T3U1')
-            //this.setState({T: 'คุณจะต้องดื่มเกลือแร่ทดแทนน้ำที่ขาดด้วย ORS/IVF โดยเร็ว'})
-            //this.setState({U1:'ต้องการหาโรงพยาบาลใกล้เคียง',U2:'สั่งซื้อเกลือแร่'})
-        }
-
-    }
-    callByU2 = () => {
-        if (this.state.count == 1 && this.state.tstate == 1) { //ต้องการหาโรงพยาบาลใกล้เคียง
-            this.setState({ T: 'เปิด Google Map สิครับ' })
-        }
-        else if (this.state.count == 2 && this.state.tstate == 2) { //ไม่ใช่ T0U2
-            this.state.count++
-            this.post2('T0U2')
-            //this.setState({T: 'คุณควรพักผ่อนเยอะๆ นะครับ'})
-        }
-        else if (this.state.count == 3 && this.state.tstate == 3) { //อุจจาระร่วง T1U2
-            this.state.count++ //count = 4
-            this.state.tstate++
-            this.state.stathis++
-            this.objHis.a3='มีอาการอุจจาระร่วงเด่น'
-            this.post2('T1U2')
-            //this.setState({T: 'คุณถ่ายเป็นอย่างไรบ้าง'})
-            //this.setState({U1:'ถ่ายเป็นน้ำ',U2:'ถ่ายเป็นมูกเลือด'})
-        }
-        else if (this.state.count == 4 && this.state.tstate == 4) { //ถ่ายเป็นมูกเลือด T2U2
-            this.state.count++ //count = 5
-            this.state.stathis++
-            this.objHis.a4='ถ่ายเป็นมูกเลือด'
-            this.post2('T2U2')
-            //this.setState({T: 'คุณจะต้องตรวจอึจจาระด้วยกล้องจุลทรรศน์และเพาะเชื้อ'})
-            //this.setState({U1:'ต้องการหาโรงพยาบาลใกล้เคียง',U2:'กลับสู่หน้าหลัก'})
-        }
-        else if (this.state.count == 5 && this.state.tstate == 5) { //มีน้อยหรือไม่มีเลย T3U2
-            this.state.count++ //count = 6
-            this.state.stathis++
-            this.objHis.a5='มีน้อยหรือไม่มีเลย'
-            this.post2('T3U2')
-            //this.setState({T: 'คุณจะต้องดื่มเกลือแร่ป้องกันการขาดน้ำด้วย ORT'})
-            //this.setState({U1:'ต้องการหาโรงพยาบาลใกล้เคียง',U2:'สั่งซื้อเกลือแร่'})
-        }
-    }
-    //History
-    chipHistory = (text) => {
-        return (
-            <div><Chip color="primary" variant="outlined" label={text} style={{ marginTop: '15px', marginRight: '2px' }} /></div>
-        );
-    }
-
-    hisQA = (x, t1, t2, t3, t4, t5) => {
-        if (x == 1) {
-            return (<div>
-                <Grid container spacing={0} direction="row" justify="flex-start" alignItems="flex-start" style={{ marginTop: '15px' }}>
-                    {this.chipHistory(t1)}
-                </Grid>
-            </div>);
-        }
-        else if (x == 2) {
-            return (<div>
-                <Grid container spacing={0} direction="row" justify="flex-start" alignItems="flex-start" style={{ marginTop: '15px' }}>
-                    {this.chipHistory(t1)}{this.chipHistory(t2)}
-                </Grid>
-            </div>);
-        }
-        else if (x == 3) {
-            return (<div>
-                <Grid container spacing={0} direction="row" justify="flex-start" alignItems="flex-start" style={{ marginTop: '15px' }}>
-                    {this.chipHistory(t1)}{this.chipHistory(t2)}{this.chipHistory(t3)}
-                </Grid>
-            </div>);
-        }
-        else if (x == 4) {
-            return (<div>
-                <Grid container spacing={0} direction="row" justify="flex-start" alignItems="flex-start" style={{ marginTop: '15px' }}>
-                    {this.chipHistory(t1)}{this.chipHistory(t2)}{this.chipHistory(t3)}{this.chipHistory(t4)}
-                </Grid>
-            </div>);
-        }
-        else if (x == 5) {
-            return (<div>
-                <Grid container spacing={0} direction="row" justify="flex-start" alignItems="flex-start" style={{ marginTop: '15px' }}>
-                    {this.chipHistory(t1)}{this.chipHistory(t2)}{this.chipHistory(t3)}{this.chipHistory(t4)}{this.chipHistory(t5)}
-                </Grid>
-            </div>);
-        }
-    }
-    callHistoryCondition = () =>  {
-        if(this.state.stathis==1){
-            return this.hisQA(1, this.objHis.a1)
-        }
-        else if(this.state.stathis==2){
-            return this.hisQA(2, this.objHis.a1,this.objHis.a2)
-        }
-        else if(this.state.stathis==3){
-            return this.hisQA(3, this.objHis.a1,this.objHis.a2,this.objHis.a3)
-        }
-        else if(this.state.stathis==4){
-            return this.hisQA(4, this.objHis.a1,this.objHis.a2,this.objHis.a3,this.objHis.a4)
-        }
-        else if(this.state.stathis==5){
-            return this.hisQA(5, this.objHis.a1,this.objHis.a2,this.objHis.a3,this.objHis.a4,this.objHis.a5)
-        }
-    }
-
-
-    render() {
-        const QandAE = () => (
-
-            < div >
-                <Paper>
-                    <Grid container spacing={12} style={boxstyle}>
-                        <Grid item xs={2} sm={2} >
-                            <Avatar style={tstyles}>T</Avatar>
-                        </Grid>
-                        <Grid item xs={8} sm={8}>
-                            <Paper style={mtstyle}>{this.state.T}</Paper>
-                        </Grid>
-                        <Grid item xs={2} sm={2}></Grid>
-                    </Grid>
-                    <Grid container spacing={12} >
-                        <Grid item xs={2} sm={2}></Grid>
-                        <Grid item xs={8} sm={8} style={boxMessage}>
-                            <Paper style={mastyle} onClick={this.callByU1} >{this.state.U1}</Paper>
-                            <Paper style={mastyle} onClick={this.callByU2} >{this.state.U2}</Paper>
-                        </Grid>
-                        <Grid item xs={2} sm={2}>
-                            <Avatar style={ustyles}>U</Avatar>
-                        </Grid>
-                    </Grid>
-                </Paper>
-            </div >
-        )
-        const callHistory = () => (
-            <div>{this.callHistoryCondition()}</div>
-        )
-        return (
-
-            <div>
-                {callHistory()}
-                {QandAE()}
-            </div>
-        );
-    }
-}
-export default QandA

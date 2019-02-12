@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 const Shop = () => (
     <div>
         <Layout>
-            <Grid container spacing={24}>
+            <Grid container spacing={16}>
                 <Grid item xs={12} sm={2} md={3} lg={3} >
 
                 </Grid>

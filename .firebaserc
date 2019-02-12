@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "t-d2x-78677"
+    "default": "t-d2x-78677",
+    ".next": "server-t-d2x",
+    "out": "server-t-d2x"
   }
 }

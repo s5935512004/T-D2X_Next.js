@@ -189,196 +189,189 @@ var _jsxFileName = "C:\\Users\\Sunday\\Documents\\Project\\T-D2X-next\\component
 
 
 
-var style = {
-  fontSize: '16px',
-  color: '#ffffff'
-};
-var login = {
-  marginTop: 6,
-  marginRight: 15,
-  marginBottom: 6,
-  paddingLeft: 30,
-  paddingRight: 30,
-  color: '#ffffff'
-};
-var topbar = {
-  backgroundColor: 'black',
-  position: 'absolute',
-  right: 0,
-  top: 0,
-  left: 0,
-  paddingTop: '10px',
-  paddingBottom: '10px',
-  color: 'blue'
-};
-var shop = {
-  marginRight: '20px'
-};
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1662030054",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    styleId: "1662030054",
-    css: "S.jsx-1662030054{cursor:pointer;color:#2da9eb;fontSize:'17px';}S.jsx-1662030054:hover{color:#58c5ff;cursor:pointer;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcU3VuZGF5XFxEb2N1bWVudHNcXFByb2plY3RcXFQtRDJYLW5leHRcXGNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5Q2dCLEFBRzRCLEFBS0QsY0FDQyxDQUxELGNBQ0UsQUFLbEIsZ0JBSkEiLCJmaWxlIjoiQzpcXFVzZXJzXFxTdW5kYXlcXERvY3VtZW50c1xcUHJvamVjdFxcVC1EMlgtbmV4dFxcY29tcG9uZW50c1xcSGVhZGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xyXG5pbXBvcnQgR3JpZCBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9HcmlkJ1xyXG5pbXBvcnQgVGFiIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL1RhYidcclxuaW1wb3J0IFRhYnMgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvVGFicydcclxuaW1wb3J0IFBhcGVyIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL1BhcGVyJ1xyXG5pbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnXHJcbmltcG9ydCBBcHBCYXIgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvQXBwQmFyJ1xyXG5pbXBvcnQgQnV0dG9uIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0J1dHRvbidcclxuaW1wb3J0IFRleHRGaWVsZCBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9UZXh0RmllbGQnXHJcbmltcG9ydCBNZW51SXRlbSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9NZW51SXRlbSdcclxuaW1wb3J0IElucHV0IGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0lucHV0J1xyXG5pbXBvcnQgRmFiIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0ZhYidcclxuXHJcbmNvbnN0IHN0eWxlID0ge1xyXG4gIGZvbnRTaXplOiAnMTZweCcsXHJcbiAgY29sb3I6ICcjZmZmZmZmJyxcclxufVxyXG5jb25zdCBsb2dpbiA9IHtcclxuICBtYXJnaW5Ub3A6IDYsXHJcbiAgbWFyZ2luUmlnaHQ6IDE1LFxyXG4gIG1hcmdpbkJvdHRvbTogNixcclxuICBwYWRkaW5nTGVmdDogMzAsXHJcbiAgcGFkZGluZ1JpZ2h0OiAzMCxcclxuICBjb2xvcjogJyNmZmZmZmYnLFxyXG59XHJcbmNvbnN0IHRvcGJhciA9IHtcclxuICBiYWNrZ3JvdW5kQ29sb3I6ICdibGFjaycsXHJcbiAgcG9zaXRpb246ICdhYnNvbHV0ZScsXHJcbiAgcmlnaHQ6IDAsXHJcbiAgdG9wOiAwLFxyXG4gIGxlZnQ6IDAsXHJcbiAgcGFkZGluZ1RvcDogJzEwcHgnLFxyXG4gIHBhZGRpbmdCb3R0b206ICcxMHB4JyxcclxuICBjb2xvcjogJ2JsdWUnLFxyXG59XHJcbmNvbnN0IHNob3AgPSB7XHJcbiAgbWFyZ2luUmlnaHQ6ICcyMHB4JyxcclxufVxyXG5cclxuY29uc3QgSGVhZGVyID0gKCkgPT4gKFxyXG4gIDxkaXY+XHJcbiAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgICBTIHtcclxuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICBjb2xvcjogIzJkYTllYjtcclxuICAgICAgICAgICAgZm9udFNpemU6ICcxN3B4JztcclxuICAgICAgICAgIH1cclxuICAgICAgICAgIFM6aG92ZXIge1xyXG4gICAgICAgICAgICBjb2xvcjogIzU4YzVmZjtcclxuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgfVxyXG4gICAgYH08L3N0eWxlPlxyXG4gICAgezxkaXYgY2xhc3M9XCJ0b3BiYXJcIiBhbGlnbj1cInJpZ2h0XCIgc3R5bGU9e3RvcGJhcn0+XHJcbiAgICAgIDxHcmlkIGNvbnRhaW5lciBzcGFjaW5nPXs4fSA+XHJcbiAgICAgICAgPEdyaWQgaXRlbSB4cz17MTB9IHNtPXsxMH0gYWxpZ249XCJjZW50ZXJcIj5Mb2dvPC9HcmlkPlxyXG4gICAgICAgIDxHcmlkIGl0ZW0geHM9ezJ9IHNtPXsyfSBhbGlnbj1cInJpZ2h0XCIgPlxyXG4gICAgICAgICAgPExpbmsgaHJlZj1cIi9zaG9wXCI+XHJcbiAgICAgICAgICAgIDxGYWIgdmFyaWFudD1cImV4dGVuZGVkXCIgY29sb3I9XCJwcmltYXJ5XCIgc2l6ZT1cInNtYWxsXCJzdHlsZT17c2hvcH0gPlNob3A8L0ZhYj5cclxuICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICA8L0dyaWQ+XHJcbiAgICAgIDwvR3JpZD5cclxuICAgIDwvZGl2Pn1cclxuICAgIDxHcmlkIGNvbnRhaW5lcj5cclxuICAgICAgPEdyaWQgaXRlbSB4cz17MTJ9IHNtPXsxMH0gbWQ9ezEwfSBsZz17MTB9ID5cclxuICAgICAgICA8VGFicyBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6ICcjMzM0NzllJywgcGFkZGluZ1RvcDogJzUwcHgnfX0+XHJcbiAgICAgICAgICA8TGluayBocmVmPVwiL1wiPlxyXG4gICAgICAgICAgICA8VGFiIGxhYmVsPVwi4Lir4LiZ4LmJ4Liy4Lir4Lil4Lix4LiBXCIgc3R5bGU9e3N0eWxlfSBpZD1cIlNcIj48L1RhYj5cclxuICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICAgIDxMaW5rIGhyZWY9XCIvaGVscFwiPlxyXG4gICAgICAgICAgICA8VGFiIGxhYmVsPVwi4LiW4Liy4Lih4Lir4Lih4LitXCIgc3R5bGU9e3N0eWxlfT48L1RhYj5cclxuICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICA8L1RhYnM+XHJcbiAgICAgIDwvR3JpZD5cclxuXHJcbiAgICAgIDxHcmlkIGl0ZW0geHM9ezEyfSBzbT17Mn0gbWQ9ezJ9IGxnPXsyfSA+XHJcbiAgICAgICAgPFRhYnMgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAnIzMzNDc5ZScsIHBhZGRpbmdUb3A6ICc1MHB4JyB9fT5cclxuICAgICAgICAgIDxCdXR0b24gdmFyaWFudD1cIm91dGxpbmVkXCIgc3R5bGU9e2xvZ2lufT7guKXguK3guIfguIrguLfguYjguK3guYDguILguYnguLLguYPguIrguYk8L0J1dHRvbj5cclxuICAgICAgICAgIDxCdXR0b24gdmFyaWFudD1cIm91dGxpbmVkXCIgc3R5bGU9e2xvZ2lufT7guKrguKHguLHguITguKPguKrguKHguLLguIrguLTguIE8L0J1dHRvbj5cclxuICAgICAgICA8L1RhYnM+XHJcbiAgICAgIDwvR3JpZD5cclxuICAgIDwvR3JpZD5cclxuICA8L2Rpdj5cclxuKVxyXG5leHBvcnQgZGVmYXVsdCBIZWFkZXIiXX0= */\n/*@ sourceURL=C:\\Users\\Sunday\\Documents\\Project\\T-D2X-next\\components\\Header.js */",
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    class: "topbar",
-    align: "right",
-    style: topbar,
-    className: "jsx-1662030054",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
     container: true,
-    spacing: 8,
+    spacing: 16,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    item: true,
-    xs: 10,
-    sm: 10,
-    align: "center",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }, "Logo"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    item: true,
-    xs: 2,
-    sm: 2,
-    align: "right",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/shop",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Fab__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    variant: "extended",
-    color: "primary",
-    size: "small",
-    style: shop,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, "Shop"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    container: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
     item: true,
     xs: 12,
-    sm: 10,
-    md: 10,
-    lg: 10,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    sm: 12,
     style: {
-      backgroundColor: '#33479e',
-      paddingTop: '50px'
+      backgroundColor: '#1F1F1F',
+      position: 'relative'
     },
+    align: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 18
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    label: "\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E25\u0E31\u0E01",
-    style: style,
-    id: "S",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: "https://github.com/s5935512004/T-D2X_Next.js/blob/master/Pictures/Logo.png?raw=true",
+    width: "40",
+    height: "40",
+    className: "jsx-3866341379",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 19
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/help",
+    href: "/shop",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    label: "\u0E16\u0E32\u0E21\u0E2B\u0E21\u0E2D",
-    style: style,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    item: true,
-    xs: 12,
-    sm: 2,
-    md: 2,
-    lg: 2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    style: {
-      backgroundColor: '#33479e',
-      paddingTop: '50px'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9___default.a, {
-    variant: "outlined",
-    style: login,
+    style: {
+      color: 'white',
+      position: 'absolute',
+      right: 0,
+      marginTop: '5px',
+      marginRight: '10px'
+    },
+    color: "primary",
+    variant: "contained",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 22
     },
     __self: this
-  }, "\u0E25\u0E2D\u0E07\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9___default.a, {
-    variant: "outlined",
-    style: login,
+  }, "Shop"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    container: true,
+    spacing: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 25
     },
     __self: this
-  }, "\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01")))));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    item: true,
+    xs: 12,
+    sm: 12,
+    style: {
+      /*opacity: 0.4, */
+      position: 'relative'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "jsx-3866341379",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "jsx-3866341379",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "jsx-3866341379",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E25\u0E31\u0E01"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/help",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "jsx-3866341379",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "jsx-3866341379",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "\u0E16\u0E32\u0E21\u0E2B\u0E21\u0E2D"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Fab__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    variant: "extended",
+    size: "small",
+    color: "default",
+    style: {
+      position: 'absolute',
+      right: 0,
+      marginTop: '5px',
+      marginRight: '10px',
+      paddingRight: '15px',
+      paddingLeft: '15px',
+      color: '#fff',
+      backgroundColor: '#3f51b5'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, "\u0E25\u0E07\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Fab__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    variant: "extended",
+    size: "small",
+    color: "default",
+    style: {
+      position: 'absolute',
+      float: 'Right',
+      right: 0,
+      marginTop: '5px',
+      marginRight: '115px',
+      paddingRight: '15px',
+      paddingLeft: '15px',
+      color: '#fff',
+      backgroundColor: '#3f51b5'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, "\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    styleId: "3866341379",
+    css: "img.jsx-3866341379{cursor:pointer;}ul.jsx-3866341379{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#000000;opacity:0.7;}li.jsx-3866341379{cursor:pointer;float:left;}li.jsx-3866341379 a.jsx-3866341379{display:block;color:white;text-align:center;padding:14px 16px;-webkit-text-decoration:none;text-decoration:none;}li.jsx-3866341379:hover{color:#58c5ff;cursor:pointer;opacity:'1';}li.jsx-3866341379 a.jsx-3866341379:hover{color:#1e88e5;opacity:1;}@media (max-width:600px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcU3VuZGF5XFxEb2N1bWVudHNcXFByb2plY3RcXFQtRDJYLW5leHRcXGNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2RGtCLEFBSXdCLEFBS00sQUFRTixBQUtELEFBT0ksQUFLSixjQVhGLEFBT08sQUFLVCxDQTlCWixBQWFhLE1BUkYsR0EwQlgsRUFoQkEsQUFJb0IsR0FRakIsQ0FyQlMsVUFDTSxDQW9CZCxHQVBnQixZQVpPLE1BYUosbUJBWlQsWUFDZCxtQkFZQSIsImZpbGUiOiJDOlxcVXNlcnNcXFN1bmRheVxcRG9jdW1lbnRzXFxQcm9qZWN0XFxULUQyWC1uZXh0XFxjb21wb25lbnRzXFxIZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXHJcbmltcG9ydCBHcmlkIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0dyaWQnXHJcbmltcG9ydCBUYWIgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvVGFiJ1xyXG5pbXBvcnQgVGFicyBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9UYWJzJ1xyXG5pbXBvcnQgUGFwZXIgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvUGFwZXInXHJcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcydcclxuaW1wb3J0IEFwcEJhciBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9BcHBCYXInXHJcbmltcG9ydCBCdXR0b24gZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvQnV0dG9uJ1xyXG5pbXBvcnQgVGV4dEZpZWxkIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL1RleHRGaWVsZCdcclxuaW1wb3J0IE1lbnVJdGVtIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL01lbnVJdGVtJ1xyXG5pbXBvcnQgSW5wdXQgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvSW5wdXQnXHJcbmltcG9ydCBGYWIgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvRmFiJ1xyXG5cclxuY29uc3QgSGVhZGVyID0gKCkgPT4gKFxyXG4gIDxkaXY+XHJcbiAgICA8R3JpZCBjb250YWluZXIgc3BhY2luZz17MTZ9ID5cclxuICAgICAgPEdyaWQgIGl0ZW0geHM9ezEyfSBzbT17MTJ9IHN0eWxlPXt7YmFja2dyb3VuZENvbG9yOiAnIzFGMUYxRicsIHBvc2l0aW9uOiAncmVsYXRpdmUnIH19IGFsaWduPSdjZW50ZXInID5cclxuICAgICAgICA8TGluayBocmVmPVwiL1wiPlxyXG4gICAgICAgICAgPGltZyBzcmM9XCJodHRwczovL2dpdGh1Yi5jb20vczU5MzU1MTIwMDQvVC1EMlhfTmV4dC5qcy9ibG9iL21hc3Rlci9QaWN0dXJlcy9Mb2dvLnBuZz9yYXc9dHJ1ZVwiIHdpZHRoPVwiNDBcIiBoZWlnaHQ9XCI0MFwiPjwvaW1nPlxyXG4gICAgICAgIDwvTGluaz5cclxuICAgICAgICA8TGluayBocmVmPVwiL3Nob3BcIj5cclxuICAgICAgICAgIDxCdXR0b24gc3R5bGU9e3tjb2xvcjond2hpdGUnLHBvc2l0aW9uOidhYnNvbHV0ZScscmlnaHQ6MCxtYXJnaW5Ub3A6JzVweCcsbWFyZ2luUmlnaHQ6JzEwcHgnfX1jb2xvcj1cInByaW1hcnlcIiB2YXJpYW50PVwiY29udGFpbmVkXCI+U2hvcDwvQnV0dG9uPlxyXG4gICAgICAgIDwvTGluaz5cclxuICAgICAgPC9HcmlkPlxyXG4gICAgICAgIDxHcmlkIGNvbnRhaW5lciBzcGFjaW5nPXswfSA+XHJcbiAgICAgICAgPEdyaWQgaXRlbSB4cz17MTJ9IHNtPXsxMn0gc3R5bGU9e3sgLypvcGFjaXR5OiAwLjQsICovIHBvc2l0aW9uOiAncmVsYXRpdmUnfX0gPlxyXG4gICAgICAgICAgPHVsPlxyXG4gICAgICAgICAgICA8TGluayBocmVmPVwiL1wiPlxyXG4gICAgICAgICAgICAgIDxsaT48YT7guKvguJnguYnguLLguKvguKXguLHguIE8L2E+PC9saT5cclxuICAgICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2hlbHBcIj5cclxuICAgICAgICAgICAgICA8bGk+PGE+4LiW4Liy4Lih4Lir4Lih4LitPC9hPjwvbGk+XHJcbiAgICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgPC9HcmlkPlxyXG4gICAgICAgIDxGYWIgdmFyaWFudD1cImV4dGVuZGVkXCIgc2l6ZT1cInNtYWxsXCIgY29sb3I9XCJkZWZhdWx0XCJcclxuICAgICAgICAgIHN0eWxlPXt7cG9zaXRpb246J2Fic29sdXRlJyxcclxuICAgICAgICAgICAgICAgICAgcmlnaHQ6MCxcclxuICAgICAgICAgICAgICAgICAgbWFyZ2luVG9wOic1cHgnLFxyXG4gICAgICAgICAgICAgICAgICBtYXJnaW5SaWdodDonMTBweCcgLFxyXG4gICAgICAgICAgICAgICAgICBwYWRkaW5nUmlnaHQ6JzE1cHgnLFxyXG4gICAgICAgICAgICAgICAgICBwYWRkaW5nTGVmdDonMTVweCcsXHJcbiAgICAgICAgICAgICAgICAgIGNvbG9yOiAnI2ZmZicsXHJcbiAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogJyMzZjUxYjUnLFxyXG4gICAgICAgICAgICAgICAgICB9fT7guKXguIfguIrguLfguYjguK3guYDguILguYnguLLguYPguIrguYlcclxuXHJcbiAgICAgICAgICA8L0ZhYj5cclxuICAgICAgICAgIDxGYWIgdmFyaWFudD1cImV4dGVuZGVkXCIgc2l6ZT1cInNtYWxsXCIgY29sb3I9XCJkZWZhdWx0XCJcclxuICAgICAgICAgIHN0eWxlPXt7cG9zaXRpb246J2Fic29sdXRlJyxcclxuICAgICAgICAgICAgICAgICAgZmxvYXQ6J1JpZ2h0JyxcclxuICAgICAgICAgICAgICAgICAgcmlnaHQ6MCxcclxuICAgICAgICAgICAgICAgICAgbWFyZ2luVG9wOic1cHgnLFxyXG4gICAgICAgICAgICAgICAgICBtYXJnaW5SaWdodDonMTE1cHgnICxcclxuICAgICAgICAgICAgICAgICAgcGFkZGluZ1JpZ2h0OicxNXB4JyxcclxuICAgICAgICAgICAgICAgICAgcGFkZGluZ0xlZnQ6JzE1cHgnLFxyXG4gICAgICAgICAgICAgICAgICBjb2xvcjogJyNmZmYnLFxyXG4gICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICcjM2Y1MWI1JyxcclxuICAgICAgICAgICAgICAgICAgfX0+4LmA4LiC4LmJ4Liy4Liq4Li54LmI4Lij4Liw4Lia4LiaXHJcbiAgICAgICAgICA8L0ZhYj5cclxuICAgICAgPC9HcmlkPlxyXG5cclxuICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICBcclxuICAgICAgaW1ne1xyXG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgfVxyXG5cclxuICAgICAgLy9OYXZpZ2F0aW9uIFxyXG4gICAgICB1bCB7XHJcbiAgICAgICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG4gICAgICAgIG1hcmdpbjogMDtcclxuICAgICAgICBwYWRkaW5nOiAwO1xyXG4gICAgICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDAwMDtcclxuICAgICAgICBvcGFjaXR5OiAwLjc7XHJcbiAgICAgIH1cclxuICAgICAgbGkge1xyXG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICBmbG9hdDogbGVmdDtcclxuICAgICAgICAvL29wYWNpdHk6ICcwJ1xyXG4gICAgICB9IFxyXG4gICAgICBsaSBhIHtcclxuICAgICAgICBkaXNwbGF5OiBibG9jaztcclxuICAgICAgICBjb2xvcjogd2hpdGU7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIHBhZGRpbmc6IDE0cHggMTZweDtcclxuICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICAgIH1cclxuICAgICAgbGk6aG92ZXIge1xyXG4gICAgICAgICAgICBjb2xvcjogIzU4YzVmZjtcclxuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICBvcGFjaXR5OiAnMSdcclxuICAgICAgICAgIH1cclxuICAgICAgbGkgYTpob3ZlciB7XHJcbiAgICAgICAgY29sb3I6ICMxZTg4ZTU7XHJcbiAgICAgICAgb3BhY2l0eTogMTtcclxuICAgICAgfVxyXG5cclxuICAgICAgQG1lZGlhIChtYXgtd2lkdGg6IDYwMHB4KSB7fVxyXG4gICAgYH08L3N0eWxlPlxyXG4gICAgPC9HcmlkPlxyXG4gIDwvZGl2PlxyXG4pXHJcbmV4cG9ydCBkZWZhdWx0IEhlYWRlciJdfQ== */\n/*@ sourceURL=C:\\Users\\Sunday\\Documents\\Project\\T-D2X-next\\components\\Header.js */",
+    __self: this
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -458,6 +451,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Chip */ "@material-ui/core/Chip");
 /* harmony import */ var _material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Card */ "@material-ui/core/Card");
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "@material-ui/core/CircularProgress");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_11__);
 var _jsxFileName = "C:\\Users\\Sunday\\Documents\\Project\\T-D2X-next\\components\\QandA.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -490,18 +487,501 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
+
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(App, _Component);
+
+  function App() {
+    var _this;
+
+    _classCallCheck(this, App);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "componentDidMount", function () {
+      _this.setState({
+        main: true
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "get", function () {
+      axios__WEBPACK_IMPORTED_MODULE_7___default.a.get('http://localhost:3001/q').then(function (res) {
+        console.log(res.data.title);
+
+        _this.setState({
+          data: res.data
+        }, function () {
+          return console.log(_this.state.data);
+        });
+      }).finally(function () {
+        _this.setState({
+          isLoading: false,
+          main: false
+        });
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "reset", function () {
+      _this.setState({
+        main: true
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "send1", function (evt) {
+      _this.setState({
+        isLoading: true
+      });
+
+      evt.preventDefault();
+
+      if (_this.state.data.order.substring(0, 1) === 'S') {
+        axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('http://157.230.43.83:3001/q', {
+          order: _this.state.data.symptom.S1.nextOrder
+        }).then(function (res) {
+          console.log(res);
+
+          _this.setState({
+            data: res.data
+          }, function () {
+            return console.log(_this.state.data);
+          });
+        }).catch(function (error) {
+          console.log(error.message);
+        }).finally(function () {
+          _this.setState({
+            isLoading: false,
+            main: false
+          });
+        });
+      } else {
+        axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('http://157.230.43.83:3001/q', {
+          order: _this.state.data.symptom.U1.nextOrder
+        }).then(function (res) {
+          console.log(res);
+
+          _this.setState({
+            data: res.data
+          }, function () {
+            return console.log(_this.state.data);
+          });
+        }).catch(function (error) {
+          console.log(error.message);
+        }).finally(function () {
+          _this.setState({
+            isLoading: false,
+            main: false
+          });
+        });
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "send2", function (evt) {
+      _this.setState({
+        isLoading: true
+      });
+
+      evt.preventDefault();
+      axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('http://157.230.43.83:3001/q', {
+        order: _this.state.data.symptom.U2.nextOrder
+      }).then(function (res) {
+        console.log(res);
+
+        _this.setState({
+          data: res.data
+        }, function () {
+          return console.log(_this.state.data);
+        });
+      }).catch(function (error) {
+        console.log(error.message);
+      }).finally(function () {
+        _this.setState({
+          isLoading: false,
+          main: false
+        });
+      });
+    });
+
+    _this.state = {
+      ans: "",
+      text: "",
+      data: {},
+      isLoading: true,
+      main: true
+    };
+    return _this;
+  }
+
+  _createClass(App, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var QandAE = function QandAE() {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 89
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 90
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          container: true,
+          spacing: 12,
+          style: boxstyle,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 91
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 2,
+          sm: 2,
+          align: "center",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 92
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_6___default.a, {
+          style: tstyles,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 93
+          },
+          __self: this
+        }, "T")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 8,
+          sm: 8,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 95
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          style: mtstyle,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 96
+          },
+          __self: this
+        }, _this2.state.data.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 2,
+          sm: 2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 98
+          },
+          __self: this
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          container: true,
+          spacing: 12,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 100
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 2,
+          sm: 2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 101
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 8,
+          sm: 8,
+          style: boxMessage,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 102
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          style: mastyle,
+          onClick: _this2.send1,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 103
+          },
+          __self: this
+        }, _this2.state.data.symptom.U1.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          style: mastyle,
+          onClick: _this2.send2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 104
+          },
+          __self: this
+        }, _this2.state.data.symptom.U2.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 2,
+          sm: 2,
+          align: "center",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 106
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_6___default.a, {
+          style: ustyles,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 107
+          },
+          __self: this
+        }, "U")))));
+      };
+
+      var Recommend = function Recommend() {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 114
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          container: true,
+          spacing: 24,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 115
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 12,
+          sm: 2,
+          md: 2,
+          lg: 2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 116
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 12,
+          sm: 8,
+          md: 8,
+          lg: 8,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 117
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10___default.a, {
+          style: cardstyle,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 118
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+          align: "center",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 119
+          },
+          __self: this
+        }, _this2.state.data.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          onClick: _this2.send1,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 120
+          },
+          __self: this
+        }, _this2.state.data.symptom.S1.title))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 12,
+          sm: 2,
+          md: 2,
+          lg: 2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 123
+          },
+          __self: this
+        })));
+      };
+
+      var cardstyle = {
+        marginTop: '30px',
+        paddingLeft: '10px',
+        paddingRight: '10px'
+      };
+
+      var Develop = function Develop() {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 134
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          container: true,
+          spacing: 24,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 135
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 12,
+          sm: 2,
+          md: 2,
+          lg: 2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 136
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 12,
+          sm: 8,
+          md: 8,
+          lg: 8,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 137
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_10___default.a, {
+          style: cardstyle,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 138
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+          align: "center",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 139
+          },
+          __self: this
+        }, _this2.state.data.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          onClick: _this2.reset,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 140
+          },
+          __self: this
+        }, "Coming Soon"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          item: true,
+          xs: 12,
+          sm: 2,
+          md: 2,
+          lg: 2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 143
+          },
+          __self: this
+        })));
+      };
+
+      var Progress = function Progress() {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: cardstyle,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 148
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_11___default.a, {
+          color: "primary",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 149
+          },
+          __self: this
+        }));
+      };
+
+      var _this$state = this.state,
+          isLoading = _this$state.isLoading,
+          data = _this$state.data,
+          main = _this$state.main;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 156
+        },
+        __self: this
+      }, isLoading === true && main === false && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 158
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        colSpan: "5",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 159
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 160
+        },
+        __self: this
+      }, Progress()))), main === true && this.get(), isLoading === false && main === false && data.title === 'กำลังพัฒนา' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 171
+        },
+        __self: this
+      }, Develop()), isLoading === false && main === false && data.type === 'summit' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 178
+        },
+        __self: this
+      }, Recommend()), isLoading === false && data.symptom.count === 2 && main === false && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 193
+        },
+        __self: this
+      }, QandAE()));
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
 var boxstyle = {
   margin: '30px 0px'
 };
 var tstyles = {
-  marginLeft: '15px',
-  marginTop: '30px',
-  marginBottom: '40px'
+  align: 'center',
+  //marginLeft: '15px',
+  marginTop: '28px' //marginBottom: '40px',
+
 };
-var ustyles = {
-  marginRight: '15px',
-  float: 'Right',
-  marginBottom: '15px'
+var ustyles = {//marginRight: '15px',
+  //float: 'Right',
+  //marginBottom: '15px',
 };
 var qastyles = {
   margin: '10px 0px'
@@ -524,487 +1004,6 @@ var mastyle = {
 var boxMessage = {
   marginBottom: '30px'
 };
-
-var QandA =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(QandA, _Component);
-
-  function QandA() {
-    var _this;
-
-    _classCallCheck(this, QandA);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(QandA).call(this));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "get", function () {
-      axios__WEBPACK_IMPORTED_MODULE_7___default.a.get('http://localhost:5000/api').then(function (res) {
-        console.log(res.data);
-
-        _this.setState({
-          T: res.data.type
-        });
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "post2", function (evt) {
-      axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('http://localhost:5000/api', {
-        symptom: evt
-      }).then(function (res) {
-        //console.log("res :"+res)
-        _this.setState({
-          data: res.data
-        }, function () {
-          return console.log(_this.state.data);
-        });
-
-        _this.setState({
-          T: _this.state.data.T
-        });
-
-        _this.setState({
-          U1: _this.state.data.U1
-        });
-
-        _this.setState({
-          U2: _this.state.data.U2
-        });
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "callByU1", function () {
-      if (_this.state.count == 1 && _this.state.tstate == 1) {
-        _this.state.count++; //count = 2
-
-        _this.state.tstate++;
-
-        _this.get();
-
-        _this.setState({
-          U1: 'ใช่',
-          U2: 'ไม่ใช่'
-        });
-      } else if (_this.state.count == 2 && _this.state.tstate == 2) {
-        //ใช่ T0U1
-        _this.state.count++; //count = 3
-
-        _this.state.tstate++;
-        _this.state.stathis++;
-        _this.objHis.a2 = 'มีอุจาระร่วงมากว่า 14 วัน';
-
-        _this.post2('T0U1'); //this.setState({T: 'คุณมีอาการอย่างไรเด่น'})
-        //this.setState({U1:'อาเจียน',U2:'อุจจาระร่วง'})
-
-      } else if (_this.state.count == 3 && _this.state.tstate == 3) {
-        //อาเจียน T1U1
-        _this.state.count++; //count = 4
-
-        _this.state.stathis++;
-
-        _this.post2('T1U1');
-
-        _this.objHis.a3 = 'อาเจียน';
-        /*this.setState({T: 'เกิดจากอาหารเป็นพิษ หรือกระเพาะและลำไส้อักเสบจากไวรัส'})
-        setTimeout(() => {
-            this.setState({T: 'ต้องรักษาตามอาการ ป้องกันและรักษาภาวะขาดน้ำและเกลือแร่ด้วย ORT/ORS/IVF'})
-            }, 2000)
-        this.setState({U1:'กลับไปหน้าหลัก',U2:'สักซื้อเกลือแร่'})*/
-      } else if (_this.state.count == 4 && _this.state.tstate == 4) {
-        //ถ่ายเป็นน้ำ T2U1
-        _this.state.count++; //count = 5
-
-        _this.state.tstate++;
-        _this.state.stathis++;
-        _this.objHis.a4 = 'ถ่ายเป็นน้ำ';
-
-        _this.post2('T2U1'); //this.setState({T: 'คุณมีอาการรุนแรงไหม'})
-        //this.setState({U1:'ปานกลางถึงรุ่นแรง',U2:'มีน้อยหรือไม่มีเลย'})
-
-      } else if (_this.state.count == 5 && _this.state.tstate == 5) {
-        //ปานกลางถึงรุ่นแรง T3U1
-        _this.state.count++; //count = 6
-
-        _this.state.tstate++;
-        _this.state.stathis++;
-        _this.objHis.a5 = 'ปานกลางถึงรุ่นแรง';
-
-        _this.post2('T3U1'); //this.setState({T: 'คุณจะต้องดื่มเกลือแร่ทดแทนน้ำที่ขาดด้วย ORS/IVF โดยเร็ว'})
-        //this.setState({U1:'ต้องการหาโรงพยาบาลใกล้เคียง',U2:'สั่งซื้อเกลือแร่'})
-
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "callByU2", function () {
-      if (_this.state.count == 1 && _this.state.tstate == 1) {
-        //ต้องการหาโรงพยาบาลใกล้เคียง
-        _this.setState({
-          T: 'เปิด Google Map สิครับ'
-        });
-      } else if (_this.state.count == 2 && _this.state.tstate == 2) {
-        //ไม่ใช่ T0U2
-        _this.state.count++;
-
-        _this.post2('T0U2'); //this.setState({T: 'คุณควรพักผ่อนเยอะๆ นะครับ'})
-
-      } else if (_this.state.count == 3 && _this.state.tstate == 3) {
-        //อุจจาระร่วง T1U2
-        _this.state.count++; //count = 4
-
-        _this.state.tstate++;
-        _this.state.stathis++;
-        _this.objHis.a3 = 'มีอาการอุจจาระร่วงเด่น';
-
-        _this.post2('T1U2'); //this.setState({T: 'คุณถ่ายเป็นอย่างไรบ้าง'})
-        //this.setState({U1:'ถ่ายเป็นน้ำ',U2:'ถ่ายเป็นมูกเลือด'})
-
-      } else if (_this.state.count == 4 && _this.state.tstate == 4) {
-        //ถ่ายเป็นมูกเลือด T2U2
-        _this.state.count++; //count = 5
-
-        _this.state.stathis++;
-        _this.objHis.a4 = 'ถ่ายเป็นมูกเลือด';
-
-        _this.post2('T2U2'); //this.setState({T: 'คุณจะต้องตรวจอึจจาระด้วยกล้องจุลทรรศน์และเพาะเชื้อ'})
-        //this.setState({U1:'ต้องการหาโรงพยาบาลใกล้เคียง',U2:'กลับสู่หน้าหลัก'})
-
-      } else if (_this.state.count == 5 && _this.state.tstate == 5) {
-        //มีน้อยหรือไม่มีเลย T3U2
-        _this.state.count++; //count = 6
-
-        _this.state.stathis++;
-        _this.objHis.a5 = 'มีน้อยหรือไม่มีเลย';
-
-        _this.post2('T3U2'); //this.setState({T: 'คุณจะต้องดื่มเกลือแร่ป้องกันการขาดน้ำด้วย ORT'})
-        //this.setState({U1:'ต้องการหาโรงพยาบาลใกล้เคียง',U2:'สั่งซื้อเกลือแร่'})
-
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "chipHistory", function (text) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 177
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Chip__WEBPACK_IMPORTED_MODULE_9___default.a, {
-        color: "primary",
-        variant: "outlined",
-        label: text,
-        style: {
-          marginTop: '15px',
-          marginRight: '2px'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 177
-        },
-        __self: this
-      }));
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "hisQA", function (x, t1, t2, t3, t4, t5) {
-      if (x == 1) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 183
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          container: true,
-          spacing: 0,
-          direction: "row",
-          justify: "flex-start",
-          alignItems: "flex-start",
-          style: {
-            marginTop: '15px'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 184
-          },
-          __self: this
-        }, _this.chipHistory(t1)));
-      } else if (x == 2) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 190
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          container: true,
-          spacing: 0,
-          direction: "row",
-          justify: "flex-start",
-          alignItems: "flex-start",
-          style: {
-            marginTop: '15px'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 191
-          },
-          __self: this
-        }, _this.chipHistory(t1), _this.chipHistory(t2)));
-      } else if (x == 3) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 197
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          container: true,
-          spacing: 0,
-          direction: "row",
-          justify: "flex-start",
-          alignItems: "flex-start",
-          style: {
-            marginTop: '15px'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 198
-          },
-          __self: this
-        }, _this.chipHistory(t1), _this.chipHistory(t2), _this.chipHistory(t3)));
-      } else if (x == 4) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 204
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          container: true,
-          spacing: 0,
-          direction: "row",
-          justify: "flex-start",
-          alignItems: "flex-start",
-          style: {
-            marginTop: '15px'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 205
-          },
-          __self: this
-        }, _this.chipHistory(t1), _this.chipHistory(t2), _this.chipHistory(t3), _this.chipHistory(t4)));
-      } else if (x == 5) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 211
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          container: true,
-          spacing: 0,
-          direction: "row",
-          justify: "flex-start",
-          alignItems: "flex-start",
-          style: {
-            marginTop: '15px'
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 212
-          },
-          __self: this
-        }, _this.chipHistory(t1), _this.chipHistory(t2), _this.chipHistory(t3), _this.chipHistory(t4), _this.chipHistory(t5)));
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "callHistoryCondition", function () {
-      if (_this.state.stathis == 1) {
-        return _this.hisQA(1, _this.objHis.a1);
-      } else if (_this.state.stathis == 2) {
-        return _this.hisQA(2, _this.objHis.a1, _this.objHis.a2);
-      } else if (_this.state.stathis == 3) {
-        return _this.hisQA(3, _this.objHis.a1, _this.objHis.a2, _this.objHis.a3);
-      } else if (_this.state.stathis == 4) {
-        return _this.hisQA(4, _this.objHis.a1, _this.objHis.a2, _this.objHis.a3, _this.objHis.a4);
-      } else if (_this.state.stathis == 5) {
-        return _this.hisQA(5, _this.objHis.a1, _this.objHis.a2, _this.objHis.a3, _this.objHis.a4, _this.objHis.a5);
-      }
-    });
-
-    _this.state = {
-      T: "สวัสดี คุณต้องการให้ช่วยไหมครับ",
-      U1: "ต้องการความช่วยเหลือ",
-      U2: "ต้องการหาโรงพยาบาลใกล้เคียง",
-      code: 'T0U1',
-      data: {},
-      count: 1,
-      tstate: 1,
-      stathis: 1
-    };
-    _this.objHis = {
-      a1: 'ต้องการความช่วยเหลือ',
-      a2: '',
-      a3: '',
-      a4: '',
-      a5: ''
-    };
-    return _this;
-  }
-
-  _createClass(QandA, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var QandAE = function QandAE() {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 240
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 241
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          container: true,
-          spacing: 12,
-          style: boxstyle,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 242
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 2,
-          sm: 2,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 243
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_6___default.a, {
-          style: tstyles,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 244
-          },
-          __self: this
-        }, "T")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 8,
-          sm: 8,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 246
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          style: mtstyle,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 247
-          },
-          __self: this
-        }, _this2.state.T)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 2,
-          sm: 2,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 249
-          },
-          __self: this
-        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          container: true,
-          spacing: 12,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 251
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 2,
-          sm: 2,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 252
-          },
-          __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 8,
-          sm: 8,
-          style: boxMessage,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 253
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          style: mastyle,
-          onClick: _this2.callByU1,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 254
-          },
-          __self: this
-        }, _this2.state.U1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          style: mastyle,
-          onClick: _this2.callByU2,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 255
-          },
-          __self: this
-        }, _this2.state.U2)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 2,
-          sm: 2,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 257
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_6___default.a, {
-          style: ustyles,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 258
-          },
-          __self: this
-        }, "U")))));
-      };
-
-      var callHistory = function callHistory() {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 265
-          },
-          __self: this
-        }, _this2.callHistoryCondition());
-      };
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 269
-        },
-        __self: this
-      }, callHistory(), QandAE());
-    }
-  }]);
-
-  return QandA;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (QandA);
 
 /***/ }),
 
@@ -1169,7 +1168,7 @@ var About = function About() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     item: true,
     xs: 12,
-    sm: 2,
+    sm: 3,
     md: 3,
     lg: 3,
     __source: {
@@ -1186,7 +1185,7 @@ var About = function About() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     item: true,
     xs: 12,
-    sm: 8,
+    sm: 6,
     md: 6,
     lg: 6,
     __source: {
@@ -1203,7 +1202,7 @@ var About = function About() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     item: true,
     xs: 12,
-    sm: 2,
+    sm: 3,
     md: 3,
     lg: 3,
     __source: {
@@ -1274,6 +1273,17 @@ module.exports = require("@material-ui/core/Button");
 
 /***/ }),
 
+/***/ "@material-ui/core/Card":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Card" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Card");
+
+/***/ }),
+
 /***/ "@material-ui/core/Chip":
 /*!*****************************************!*\
   !*** external "@material-ui/core/Chip" ***!
@@ -1282,6 +1292,17 @@ module.exports = require("@material-ui/core/Button");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Chip");
+
+/***/ }),
+
+/***/ "@material-ui/core/CircularProgress":
+/*!*****************************************************!*\
+  !*** external "@material-ui/core/CircularProgress" ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CircularProgress");
 
 /***/ }),
 

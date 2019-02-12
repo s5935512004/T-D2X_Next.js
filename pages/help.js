@@ -7,13 +7,13 @@ const About = () => (
   <div>
     <Layout>
       <Grid container spacing={24}>
-        <Grid item xs={12} sm={2} md={3} lg={3} >
+        <Grid item xs={12} sm={3} md={3} lg={3} >
           <MenuHelp/>
         </Grid>
-        <Grid item xs={12} sm={8} md={6} lg={6} >
+        <Grid item xs={12} sm={6} md={6} lg={6} >
           <QandA/>
       </Grid>
-        <Grid item xs={12} sm={2} md={3} lg={3} >
+        <Grid item xs={12} sm={3} md={3} lg={3} >
           
       </Grid>
       </Grid>
