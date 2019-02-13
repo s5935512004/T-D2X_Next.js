@@ -27,3 +27,6 @@
     "styled-jsx": "^3.2.1"
   }
 }
+"build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "export": "npm run build && next export",

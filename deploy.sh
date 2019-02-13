@@ -1,0 +1,1 @@
+pm2 start npm --name "t-d2x" -- start
