@@ -103,15 +103,15 @@
   },
   "chunks": {
     "byName": {
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\help.js": 0,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\home.js": 1,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\index.js": 2,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\popular1.js": 3,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\popular2.js": 4,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\shop.js": 5,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\_app.js": 6,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\_error.js": 7,
-      "static\\oPf17KxKlkC4b1KHJR_UM\\pages\\_document.js": 8
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\help.js": 0,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\home.js": 1,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\index.js": 2,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\popular1.js": 3,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\popular2.js": 4,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\shop.js": 5,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\_app.js": 6,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\_error.js": 7,
+      "static\\krzk5cpReiR8b5EBSUZat\\pages\\_document.js": 8
     },
     "bySource": {},
     "usedIds": [

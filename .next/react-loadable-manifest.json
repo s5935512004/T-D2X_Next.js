@@ -29,7 +29,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "../../modules/_core": [
+  "../modules/_core": [
     {
       "id": 3,
       "name": "./node_modules/core-js/library/modules/_core.js",
@@ -181,7 +181,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "../styles/withStyles": [
+  "./withStyles": [
     {
       "id": 19,
       "name": "./node_modules/@material-ui/core/styles/withStyles.js",
@@ -261,7 +261,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "../modules/es6.string.iterator": [
+  "../../modules/es6.string.iterator": [
     {
       "id": 31,
       "name": "./node_modules/core-js/library/modules/es6.string.iterator.js",
@@ -611,6 +611,12 @@
       "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
       "file": "static/chunks/commons.017d3e256ed265c5a1bc.js",
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
+    },
+    {
+      "id": 112,
+      "name": "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "static/chunks/commons.017d3e256ed265c5a1bc.js",
+      "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
   "./utils/toCssValue": [
@@ -709,7 +715,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "../../modules/_wks-ext": [
+  "./_wks-ext": [
     {
       "id": 94,
       "name": "./node_modules/core-js/library/modules/_wks-ext.js",
@@ -853,21 +859,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "@babel/runtime/helpers/typeof": [
-    {
-      "id": 112,
-      "name": "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/typeof.js",
-      "file": "static/chunks/commons.017d3e256ed265c5a1bc.js",
-      "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
-    },
-    {
-      "id": 294,
-      "name": "./node_modules/@material-ui/utils/node_modules/@babel/runtime/helpers/typeof.js",
-      "file": "static/chunks/commons.017d3e256ed265c5a1bc.js",
-      "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
-    }
-  ],
-  "./assertThisInitialized": [
+  "@babel/runtime/helpers/assertThisInitialized": [
     {
       "id": 113,
       "name": "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/assertThisInitialized.js",
@@ -1151,7 +1143,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "./../../process/browser.js": [
+  "./../../../../../process/browser.js": [
     {
       "id": 162,
       "name": "./node_modules/process/browser.js",
@@ -1247,7 +1239,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "../StyleSheet": [
+  "./StyleSheet": [
     {
       "id": 175,
       "name": "./node_modules/jss/lib/StyleSheet.js",
@@ -2027,6 +2019,14 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
+  "@babel/runtime/helpers/typeof": [
+    {
+      "id": 294,
+      "name": "./node_modules/@material-ui/utils/node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "static/chunks/commons.017d3e256ed265c5a1bc.js",
+      "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
+    }
+  ],
   "./cjs/react-is.production.min.js": [
     {
       "id": 295,
@@ -2427,7 +2427,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "../styles/transitions": [
+  "./transitions": [
     {
       "id": 350,
       "name": "./node_modules/@material-ui/core/styles/transitions.js",
@@ -2467,7 +2467,7 @@
       "publicPath": "static/chunks/commons.017d3e256ed265c5a1bc.js"
     }
   ],
-  "../styles/getThemeProps": [
+  "./getThemeProps": [
     {
       "id": 355,
       "name": "./node_modules/@material-ui/core/styles/getThemeProps.js",

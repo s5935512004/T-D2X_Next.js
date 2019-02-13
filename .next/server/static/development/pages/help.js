@@ -509,7 +509,7 @@ function (_Component) {
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "get", function () {
-      axios__WEBPACK_IMPORTED_MODULE_7___default.a.get('http://localhost:3001/q').then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_7___default.a.get('' + _this.state.port).then(function (res) {
         console.log(res.data.title);
 
         _this.setState({
@@ -539,7 +539,7 @@ function (_Component) {
       evt.preventDefault();
 
       if (_this.state.data.order.substring(0, 1) === 'S') {
-        axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('http://157.230.43.83:3001/q', {
+        axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('' + _this.state.port, {
           order: _this.state.data.symptom.S1.nextOrder
         }).then(function (res) {
           console.log(res);
@@ -558,7 +558,7 @@ function (_Component) {
           });
         });
       } else {
-        axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('http://157.230.43.83:3001/q', {
+        axios__WEBPACK_IMPORTED_MODULE_7___default.a.post('' + _this.state.port, {
           order: _this.state.data.symptom.U1.nextOrder
         }).then(function (res) {
           console.log(res);
@@ -609,6 +609,7 @@ function (_Component) {
       ans: "",
       text: "",
       data: {},
+      port: "http://157.230.43.83:3001/q",
       isLoading: true,
       main: true
     };

@@ -20,17 +20,17 @@ class App extends Component {
             data: {
 
             },
+            port: "http://157.230.43.83:3001/q",
             isLoading: true,
             main: true
         }
-
     }
     componentDidMount = () => {
         this.setState({ main: true })
     }
 
     get = () => {
-        axios.get('http://localhost:3001/q').then(res => {
+        axios.get(''+this.state.port).then(res => {
             console.log(res.data.title)
             this.setState({ data: res.data }, () => console.log(this.state.data))
         })
@@ -45,7 +45,7 @@ class App extends Component {
         this.setState({ isLoading: true })
         evt.preventDefault()
         if (this.state.data.order.substring(0, 1) === 'S') {
-            axios.post('http://157.230.43.83:3001/q', {
+            axios.post(''+this.state.port, {
                 order: this.state.data.symptom.S1.nextOrder
             }).then((res) => {
                 console.log(res)
@@ -56,7 +56,7 @@ class App extends Component {
                 this.setState({ isLoading: false, main: false })
             })
         } else {
-            axios.post('http://157.230.43.83:3001/q', {
+            axios.post(''+this.state.port, {
                 order: this.state.data.symptom.U1.nextOrder
             }).then((res) => {
                 console.log(res)
